@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Home Page</title>
+  <title>Home Page with Banner Ad</title>
   <style>
     body {
       margin: 0;
@@ -13,21 +13,39 @@
       background-size: cover;
       background-position: center;
       font-family: Arial, sans-serif;
-      color: white;
+    }
+    /* Banner container */
+    .banner-ad {
+      position: absolute;   /* stays on top of background */
+      top: 0;
+      left: 0;
+      width: 100%;
       text-align: center;
+      z-index: 9999;        /* ensures it’s above everything */
+      background: rgba(0,0,0,0.3); /* optional semi-transparent bg */
     }
     .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-    h1 {
-      font-size: 3em;
+      color: white;
+      text-shadow: 2px 2px 5px black;
     }
   </style>
 </head>
 <body>
+  <!-- Banner Ad -->
+  <div class="banner-ad">
+    <script>
+      (function(s){
+        s.dataset.zone='10254128';
+        s.src='https://nap5k.com/tag.min.js';
+      })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
+    </script>
+  </div>
+
+  
+  
 </body>
 </html>
