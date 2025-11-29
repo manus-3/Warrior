@@ -2,20 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Game Splash Screen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Screen</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 100vh;
-      width: 100vw;
-      background: url('https://drive.google.com/uc?export=view&id=18OwhDdk7U2z_ER9Q8fn12j-MeSB5MwnO') 
-                  no-repeat center center fixed;
-      background-size: cover;
       cursor: pointer;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      user-select: none;
     }
   </style>
 </head>
-<body onclick="window.location.href='lobby.html'">
+<body onclick="openLobby()">
+
+  <!-- Your Google Drive Image -->
+  <img src="https://drive.google.com/uc?id=18OwhDdk7U2z_ER9Q8fn12j-MeSB5MwnO" alt="Loading Screen">
+
+  <script>
+    function openLobby() {
+      window.location.href = "MAIN_LOBBY.html"; 
+    }
+  </script>
+
 </body>
 </html>
