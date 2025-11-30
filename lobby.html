@@ -19,17 +19,13 @@
     .overlay {
       height: 100%;
       display: flex;
-      justify-content: center;   /* horizontally center */
-      align-items: center;       /* vertically center */
-    }
-
-    .button-row {
-      display: flex;
-      gap: 20px;                 /* space between buttons */
+      flex-direction: column;   /* boro button + row niche niche */
+      justify-content: center;
       align-items: center;
+      gap: 20px;
     }
 
-    .button-row a img {
+    .overlay a img {
       display: block;
     }
 
@@ -42,6 +38,11 @@
     .btn-small img {
       width: 250px;
       height: 100px;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 20px; /* space between two small buttons */
     }
 
     /* Banner Ad at top */
@@ -103,47 +104,18 @@
     <script type="text/javascript" src="//kneestolerableadulthood.com/ba3e521fa4e435da3c8de9dec4daeb98/invoke.js"></script>
   </div>
 
-  <!-- Middle Buttons (side by side) -->
+  <!-- Middle Buttons -->
   <div class="overlay">
+    <!-- Large Button -->
+    <a href="game.html" class="btn-large">
+      <img src="https://lh3.googleusercontent.com/d/1Tp83qhYaidqPfYjg99PcpN3KRUhGypGl" alt="Large Button">
+    </a>
+
+    <!-- Two Small Buttons Side by Side -->
     <div class="button-row">
-      <!-- Large Button -->
-      <a href="game.html" class="btn-large">
-        <img src="https://lh3.googleusercontent.com/d/1Tp83qhYaidqPfYjg99PcpN3KRUhGypGl" alt="Large Button">
-      </a>
-
-      <!-- Small Button -->
       <a href="setting.html" class="btn-small">
-        <img src="https://lh3.googleusercontent.com/d/1jmGeRB7q-X60ifJaFf1NtTHwochnXEw5" alt="Small Button">
+        <img src="https://lh3.googleusercontent.com/d/1jmGeRB7q-X60ifJaFf1NtTHwochnXEw5" alt="Small Button 1">
       </a>
-    </div>
-  </div>
-
-  <!-- Bottom Navigation -->
-  <div class="bottom-nav">
-    <a href="lobby.html">
-      <img src="https://lh3.googleusercontent.com/d/1Lq_JJLJxx8QVYsJhg6m-M37Jmq8spTs6" alt="Home">
-      <span>Home</span>
-    </a>
-    <a href="wallet.html">
-      <img src="https://lh3.googleusercontent.com/d/180_TTYLE0A0TQcprK47JL08Br0DTDYoL" alt="Wallet">
-      <span>Wallet</span>
-    </a>
-    <a href="leaderboard.html">
-      <img src="https://lh3.googleusercontent.com/d/1gz3AMPC1dNSUwZPaYJs-laOiTY18NXhG" alt="Leaderboard">
-      <span>Leaderboard</span>
-    </a>
-    <a href="mining.html">
-      <img src="https://lh3.googleusercontent.com/d/1louNBi_Q-pl1vTgRZAtftzxAAbT-OyTm" alt="Mining">
-      <span>Mining</span>
-    </a>
-    <a href="shop.html">
-      <img src="https://lh3.googleusercontent.com/d/1w1Kpd7uLFY5RnFsOoWb2Idtk9oebriTd" alt="Shop">
-      <span>Shop</span>
-    </a>
-    <a href="refer.html">
-      <img src="https://lh3.googleusercontent.com/d/1XfY4fni_zEmy82xMkpxt-bS4z3CoFyZh" alt="Refer">
-      <span>Refer</span>
-    </a>
   </div>
 </body>
   </html>
