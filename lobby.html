@@ -3,47 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page with Banner Ad</title>
-  <style>..bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: space-around;
-  padding: 8px 0;
-  z-index: 9999;
-}
-
-.bottom-nav a {
-  display: flex;
-  flex-direction: column; /* stack icon above text */
-  align-items: center;
-  text-decoration: none;
-  color: white; /* makes text labels white */
-  font-size: 12px;
-}
-
-.bottom-nav a img {
-  width: 32px;
-  height: 32px;
-  transition: opacity 0.3s;
-}
-
-.bottom-nav a img:hover {
-  opacity: 0.6;
+  <title>Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('https://lh3.googleusercontent.com/d/1pcqdK_QLXYUZnS-3ZClRaZui8AfL07K_');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
     }
-    /* Banner container */
-    .banner-ad {
-      position: absolute;   /* stays on top of background */
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      z-index: 9999;        /* ensures it’s above everything */
-      background: rgba(0,0,0,0.3); /* optional semi-transparent bg */
-    }
+
     .overlay {
       height: 100%;
       display: flex;
@@ -52,18 +23,54 @@
       color: white;
       text-shadow: 2px 2px 5px black;
     }
+
+    /* Banner Ad at top */
+    .banner-ad {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 9999;
+      background: rgba(0,0,0,0.3);
+    }
+
+    /* Bottom navigation bar */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      z-index: 9999;
+    }
+
+    .bottom-nav a {
+      display: flex;
+      flex-direction: column; /* stack icon above text */
+      align-items: center;
+      text-decoration: none;
+      color: white; /* text labels will be white */
+      font-size: 12px;
+    }
+
+    .bottom-nav a img {
+      width: 32px;
+      height: 32px;
+      transition: opacity 0.3s;
+    }
+
+    .bottom-nav a img:hover {
+      opacity: 0.6;
+    }
   </style>
-</head><body><!-- Bottom Navigation -->
-<div class="bottom-nav">
-  <a href="home.html"><img src="https://lh3.googleusercontent.com/d/1TYkdYcuZ2l8-P9LSAAbmbM42RFunhMTF" alt="Home"></a>
-  <a href="wallet.html"><img src="https://lh3.googleusercontent.com/d/180_TTYLE0A0TQcprK47JL08Br0DTDYoL" alt="Wallet"></a>
-  <a href="leaderboard.html"><img src="https://lh3.googleusercontent.com/d/1J_8ox-vCU8y3fYeRuJklSD5GeYMiRUfw" alt="Leaderboard"></a>
-  <a href="mining.html"><img src="https://lh3.googleusercontent.com/d/1ncCQnWdKUwplv2ULYlD4qv_ZZrh0fPYF" alt="Mining"></a>
-  <a href="shop.html"><img src="https://lh3.googleusercontent.com/d/1w1Kpd7uLFY5RnFsOoWb2Idtk9oebriTd" alt="Shop"></a>
-  <a href="refer.html"><img src="https://lh3.googleusercontent.com/d/1Age-p027zjArBQjNkcZGq6bXXbGAOkqn" alt="Refer"></a>
-</div>
-  <!-- Banner Ad at the very top -->
-  <div class="banner-ad" style="text-align:center; width:100%; position:fixed; top:0; left:0; z-index:9999;">
+</head>
+<body>
+  <!-- Banner Ad -->
+  <div class="banner-ad">
     <script type="text/javascript">
       atOptions = {
         'key' : 'ba3e521fa4e435da3c8de9dec4daeb98',
@@ -76,20 +83,37 @@
     <script type="text/javascript" src="//kneestolerableadulthood.com/ba3e521fa4e435da3c8de9dec4daeb98/invoke.js"></script>
   </div>
 
-  
-</body>
-<body>
-  <!-- Banner Ad -->
-  <div class="banner-ad">
-    <script>
-      (function(s){
-        s.dataset.zone='10254128';
-        s.src='https://nap5k.com/tag.min.js';
-      })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
-    </script>
+  <!-- Page Content -->
+  <div class="overlay">
+    <h1>Welcome to My Home Page</h1>
   </div>
 
-  
-  
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="home.html">
+      <img src="https://lh3.googleusercontent.com/d/1TYkdYcuZ2l8-P9LSAAbmbM42RFunhMTF" alt="Home">
+      <span>Home</span>
+    </a>
+    <a href="wallet.html">
+      <img src="https://lh3.googleusercontent.com/d/180_TTYLE0A0TQcprK47JL08Br0DTDYoL" alt="Wallet">
+      <span>Wallet</span>
+    </a>
+    <a href="leaderboard.html">
+      <img src="https://lh3.googleusercontent.com/d/1J_8ox-vCU8y3fYeRuJklSD5GeYMiRUfw" alt="Leaderboard">
+      <span>Leaderboard</span>
+    </a>
+    <a href="mining.html">
+      <img src="https://lh3.googleusercontent.com/d/1ncCQnWdKUwplv2ULYlD4qv_ZZrh0fPYF" alt="Mining">
+      <span>Mining</span>
+    </a>
+    <a href="shop.html">
+      <img src="https://lh3.googleusercontent.com/d/1w1Kpd7uLFY5RnFsOoWb2Idtk9oebriTd" alt="Shop">
+      <span>Shop</span>
+    </a>
+    <a href="refer.html">
+      <img src="https://lh3.googleusercontent.com/d/1Age-p027zjArBQjNkcZGq6bXXbGAOkqn" alt="Refer">
+      <span>Refer</span>
+    </a>
+  </div>
 </body>
 </html>
