@@ -12,20 +12,24 @@
       background-image: url('https://lh3.googleusercontent.com/d/1pcqdK_QLXYUZnS-3ZClRaZui8AfL07K_');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed; /* background fixed thakbe */
+      background-attachment: fixed;
       font-family: Arial, sans-serif;
     }
 
     .overlay {
       height: 100%;
       display: flex;
-      flex-direction: column; /* icon + buttons niche niche */
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
+      justify-content: center;   /* horizontally center */
+      align-items: center;       /* vertically center */
     }
 
-    .overlay a img {
+    .button-row {
+      display: flex;
+      gap: 20px;                 /* space between buttons */
+      align-items: center;
+    }
+
+    .button-row a img {
       display: block;
     }
 
@@ -99,20 +103,17 @@
     <script type="text/javascript" src="//kneestolerableadulthood.com/ba3e521fa4e435da3c8de9dec4daeb98/invoke.js"></script>
   </div>
 
-  <!-- Middle Buttons -->
+  <!-- Middle Buttons (side by side) -->
   <div class="overlay">
-    <!-- Large Button -->
-    <a href="game.html" class="btn-large">
-      <img src="https://lh3.googleusercontent.com/d/1Tp83qhYaidqPfYjg99PcpN3KRUhGypGl" alt="Large Button">
-    </a>
-
-    <!-- Two Small Buttons Side by Side -->
-    <div style="display:flex; gap:20px;">
-      <a href="setting.html" class="btn-small">
-        <img src="https://lh3.googleusercontent.com/d/1jmGeRB7q-X60ifJaFf1NtTHwochnXEw5" alt="Small Button 1">
+    <div class="button-row">
+      <!-- Large Button -->
+      <a href="game.html" class="btn-large">
+        <img src="https://lh3.googleusercontent.com/d/1Tp83qhYaidqPfYjg99PcpN3KRUhGypGl" alt="Large Button">
       </a>
-      <a href="mission.html" class="btn-small">
-        <img src="https://lh3.googleusercontent.com/d/1RQfL2R_wdUb9Mh-kSPAi5Axk5x1lGBYN" alt="Small Button 2">
+
+      <!-- Small Button -->
+      <a href="setting.html" class="btn-small">
+        <img src="https://lh3.googleusercontent.com/d/1jmGeRB7q-X60ifJaFf1NtTHwochnXEw5" alt="Small Button">
       </a>
     </div>
   </div>
@@ -145,4 +146,4 @@
     </a>
   </div>
 </body>
-        </html>
+  </html>
