@@ -12,17 +12,32 @@
       background-image: url('https://lh3.googleusercontent.com/d/1pcqdK_QLXYUZnS-3ZClRaZui8AfL07K_');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed; / background fixed thakbe /
-  font-family: Arial, sans-serif;
+      background-attachment: fixed; /* background fixed thakbe */
+      font-family: Arial, sans-serif;
     }
 
     .overlay {
       height: 100%;
       display: flex;
+      flex-direction: column; /* icon + buttons niche niche */
       justify-content: center;
       align-items: center;
-      color: white;
-      text-shadow: 2px 2px 5px black;
+      gap: 20px;
+    }
+
+    .overlay a img {
+      display: block;
+    }
+
+    /* Button sizes */
+    .btn-large img {
+      width: 600px;
+      height: 40px;
+    }
+
+    .btn-small img {
+      width: 250px;
+      height: 40px;
     }
 
     /* Banner Ad at top */
@@ -35,23 +50,8 @@
       z-index: 9999;
       background: rgba(0,0,0,0.3);
     }
-   }
-    /* Bottom navigation bar */<!-- Large Button (opens game.html) -->
-<a href="game.html" class="btn-large">
-  <img src="https://lh3.googleusercontent.com/d/1Tp83qhYaidqPfYjg99PcpN3KRUhGypGl" alt="Large Button">
-</a>
 
-<!-- Two Small Buttons Side by Side -->
-<div style="display:flex; gap:20px;">
-  <!-- First small button opens setting.html -->
-  <a href="setting.html" class="btn-small">
-    <img src="https://lh3.googleusercontent.com/d/1jmGeRB7q-X60ifJaFf1NtTHwochnXEw5" alt="Small Button 1">
-  </a>
-  <!-- Second small button opens mission.html -->
-  <a href="mission.html" class="btn-small">
-    <img src="https://lh3.googleusercontent.com/d/1RQfL2R_wdUb9Mh-kSPAi5Axk5x1lGBYN" alt="Small Button 2">
-  </a>
-</div>
+    /* Bottom navigation bar */
     .bottom-nav {
       position: fixed;
       bottom: 0;
@@ -66,10 +66,10 @@
 
     .bottom-nav a {
       display: flex;
-      flex-direction: column; /* stack icon above text */
+      flex-direction: column;
       align-items: center;
       text-decoration: none;
-      color: white; /* text labels will be white */
+      color: white;
       font-size: 12px;
     }
 
@@ -99,7 +99,23 @@
     <script type="text/javascript" src="//kneestolerableadulthood.com/ba3e521fa4e435da3c8de9dec4daeb98/invoke.js"></script>
   </div>
 
+  <!-- Middle Buttons -->
+  <div class="overlay">
+    <!-- Large Button -->
+    <a href="game.html" class="btn-large">
+      <img src="https://lh3.googleusercontent.com/d/1Tp83qhYaidqPfYjg99PcpN3KRUhGypGl" alt="Large Button">
+    </a>
 
+    <!-- Two Small Buttons Side by Side -->
+    <div style="display:flex; gap:20px;">
+      <a href="setting.html" class="btn-small">
+        <img src="https://lh3.googleusercontent.com/d/1jmGeRB7q-X60ifJaFf1NtTHwochnXEw5" alt="Small Button 1">
+      </a>
+      <a href="mission.html" class="btn-small">
+        <img src="https://lh3.googleusercontent.com/d/1RQfL2R_wdUb9Mh-kSPAi5Axk5x1lGBYN" alt="Small Button 2">
+      </a>
+    </div>
+  </div>
 
   <!-- Bottom Navigation -->
   <div class="bottom-nav">
@@ -129,4 +145,4 @@
     </a>
   </div>
 </body>
-</html>
+        </html>
