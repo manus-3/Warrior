@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page with Banner Ad</title>
-  <style>.bottom-nav {
+  <style>..bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,23 +15,24 @@
   padding: 8px 0;
   z-index: 9999;
 }
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column; /* stack icon above text */
+  align-items: center;
+  text-decoration: none;
+  color: white; /* makes text labels white */
+  font-size: 12px;
+}
+
 .bottom-nav a img {
   width: 32px;
   height: 32px;
-  filter: brightness(0) invert(1); /* makes icons white */
   transition: opacity 0.3s;
 }
+
 .bottom-nav a img:hover {
-  opacity: 0.6; /* hover effect */
-}
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background-image: url('https://lh3.googleusercontent.com/d/1pcqdK_QLXYUZnS-3ZClRaZui8AfL07K_');
-      background-size: cover;
-      background-position: center;
-      font-family: Arial, sans-serif;
+  opacity: 0.6;
     }
     /* Banner container */
     .banner-ad {
