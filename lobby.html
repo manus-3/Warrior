@@ -9,17 +9,17 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      background-image: url('https://lh3.googleusercontent.com/d/1pcqdK_QLXYUZnS-3ZClRaZui8AfL07K_');
+      background-image: url('https://lh3.googleusercontent.com/d/1pcqdKQLXYUZnS-3ZClRaZui8AfL07K');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
+      background-attachment: fixed; / background fixed thakbe /
       font-family: Arial, sans-serif;
     }
 
     .overlay {
       height: 100%;
       display: flex;
-      flex-direction: column;   /* boro button + row niche niche */
+      flex-direction: column; / icon + buttons niche niche /
       justify-content: center;
       align-items: center;
       gap: 20px;
@@ -29,7 +29,7 @@
       display: block;
     }
 
-    /* Button sizes */
+    / Button sizes /
     .btn-large img {
       width: 400px;
       height: 60px;
@@ -40,12 +40,7 @@
       height: 100px;
     }
 
-    .button-row {
-      display: flex;
-      gap: 20px; /* space between two small buttons */
-    }
-
-    /* Banner Ad at top */
+    / Banner Ad at top /
     .banner-ad {
       position: fixed;
       top: 0;
@@ -56,7 +51,7 @@
       background: rgba(0,0,0,0.3);
     }
 
-    /* Bottom navigation bar */
+    / Bottom navigation bar /
     .bottom-nav {
       position: fixed;
       bottom: 0;
@@ -112,10 +107,42 @@
     </a>
 
     <!-- Two Small Buttons Side by Side -->
-    <div class="button-row">
+    <div style="display:flex; gap:20px;">
       <a href="setting.html" class="btn-small">
         <img src="https://lh3.googleusercontent.com/d/1jmGeRB7q-X60ifJaFf1NtTHwochnXEw5" alt="Small Button 1">
       </a>
+      <a href="mission.html" class="btn-small">
+        <img src="https://lh3.googleusercontent.com/d/1RQfL2R_wdUb9Mh-kSPAi5Axk5x1lGBYN" alt="Small Button 2">
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="lobby.html">
+      <img src="https://lh3.googleusercontent.com/d/1Lq_JJLJxx8QVYsJhg6m-M37Jmq8spTs6" alt="Home">
+      <span>Home</span>
+    </a>
+    <a href="wallet.html">
+      <img src="https://lh3.googleusercontent.com/d/180_TTYLE0A0TQcprK47JL08Br0DTDYoL" alt="Wallet">
+      <span>Wallet</span>
+    </a>
+    <a href="leaderboard.html">
+      <img src="https://lh3.googleusercontent.com/d/1gz3AMPC1dNSUwZPaYJs-laOiTY18NXhG" alt="Leaderboard">
+      <span>Leaderboard</span>
+    </a>
+    <a href="mining.html">
+      <img src="https://lh3.googleusercontent.com/d/1louNBi_Q-pl1vTgRZAtftzxAAbT-OyTm" alt="Mining">
+      <span>Mining</span>
+    </a>
+    <a href="shop.html">
+      <img src="https://lh3.googleusercontent.com/d/1w1Kpd7uLFY5RnFsOoWb2Idtk9oebriTd" alt="Shop">
+      <span>Shop</span>
+    </a>
+    <a href="refer.html">
+      <img src="https://lh3.googleusercontent.com/d/1XfY4fni_zEmy82xMkpxt-bS4z3CoFyZh" alt="Refer">
+      <span>Refer</span>
+    </a>
   </div>
 </body>
-  </html>
+</html>
